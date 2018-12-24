@@ -1,0 +1,15 @@
+@charset "UTF-8";
+@import 'modules/reset.css';
+@import "modules/vars.css";
+@import "modules/fonts.css";
+/*Далее мы подключаем стили карусели, импорт будет происходить из папки node_modules,
+где и лежит скачанная карусель, то, что шторм подчёркивает красным - пофиг, всё будет работать*/
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+@import "modules/base.css";
+@import "modules/header.css";
+@import "modules/collection.css";
+@import "modules/customers.css";
+@import "modules/foot.css";
+@import "modules/carousel.css";
+@import "modules/handpicked.css";

@@ -1,0 +1,121 @@
+/*brand*/
+
+.brand-img{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 130px;
+}
+
+/*customers*/
+
+.customers-block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #d9be8f;
+    position: relative;
+}
+
+.customers-block:after{
+    content: "";
+    height: 100%;
+    width: 100vw;
+    display: block;
+    background-color: inherit;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    margin: auto;
+    left: -50vw;
+    right: -50vw;
+}
+
+.customers-women{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-right: 50px;
+}
+
+.customers__text{
+    margin-top: 100px;
+    font-size: 1.4em;
+    line-height: 1.8;
+    font-family: "Playfair Display";
+    color: #fffffd;
+}
+
+.customers__name{
+    display: block;
+    margin-top: 40px;
+    font-size: 2.4em;
+    font-family: "Playfair Display";
+    color: #000100;
+}
+
+.customers__profession{
+    display: block;
+    margin-top: 15px;
+    font-family: Lato;
+    font-size: 1.2em;
+    color: #7e7e7e;
+}
+
+.customers__left-text{
+    margin-left: 40px;
+}
+
+.customers__man{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    justify-content: flex-end;
+}
+
+.customers__men-img{
+    order: 1;
+}
+
+.customers__right-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 40px;
+}
+
+.customers__text-men{
+    text-align: right;
+}
+
+@media screen and (max-width: 1025px) {
+    .customers-block {
+        justify-content: center;
+    }
+
+    .customers-women, .customers__man {
+        padding: 0 10px;
+    }
+
+    .brand-img {
+        justify-content: center;
+    }
+
+    .brand-img img{
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .customers-women, .customers__man{
+        justify-content: center;
+    }
+
+    .customers__text{
+        margin-top: 20px;
+    }
+
+    .customers__men-img{
+        order: -1;
+    }
+}

@@ -1,0 +1,247 @@
+.footer{
+    position: relative;
+    font-family: lato;
+}
+
+.footer__button-up{
+    position: absolute;
+    right: 0;
+    bottom: 90px;
+    cursor: pointer;
+}
+
+.footer-general{
+    margin-bottom: 40px;
+    background-color: #141414;
+    display: flex;
+    padding-top: 50px;
+    flex-wrap: wrap;
+}
+
+.footer-general:after{
+    content: "";
+    height: 100%;
+    width: 100vw;
+    display: block;
+    background-color: inherit;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    margin: auto;
+    left: -50vw;
+    right: -50vw;
+}
+
+.footer-line {
+    border-bottom: 1px solid #363636;
+    padding-bottom: 70px;
+}
+
+.footer-headers{
+    color: #e8e8e8;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-family: inherit;
+}
+
+.footer-block{
+    margin-right: 120px;
+    position: relative;
+}
+
+.footer-navs a{
+    color: #737373;
+    padding: 7px 0;
+    display: block;
+    font-family: inherit;
+}
+
+.footer__nav-button{
+    background-color: #323031;
+    border: 1px solid #e8e8e8;
+    cursor: pointer;
+    color: #e8e8e8;
+    padding: 5px;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    display: none;
+}
+
+.footer__nav-button_box{
+    display: none;
+}
+
+.footer-connected__social-button{
+    margin-bottom: 40px;
+}
+
+.footer-connected__social-button h3{
+    margin-bottom: 40px;
+}
+
+.footer-connected__social-button a{
+    margin-right: 15px;
+}
+
+.footer-copyright{
+    color: #363636;
+    font-family: inherit;
+}
+
+.footer-iconcash{
+    margin-top: 20px;
+}
+
+.footer-iconcash img{
+    padding-right: 15px;
+    margin-bottom: 70px;
+}
+
+.footer-subscribe span{
+    text-transform: lowercase;
+    padding: 0 3px;
+    font-family: inherit;
+    font-weight: initial;
+    font-size: 1.3em;
+}
+
+.footer__form-search{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 60px;
+    border: 1px solid #363636;
+    cursor: pointer;
+    width: 340px;
+}
+
+.footer__form-search__input{
+    flex-grow: 1;
+    border: none;
+    font-family: inherit;
+    padding-left: 20px;
+    background-color: inherit;
+}
+
+.footer__form-search__button{
+    padding: 0 15px;
+    height: 35px;
+    background-color: #323031;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 3px;
+    color: #e8e8e8;
+    font-family: inherit;
+}
+
+@media screen and (max-width: 1200px){
+    .footer-general{
+        justify-content: center;
+        margin: 0 auto;
+    }
+    
+    .footer-text{
+        display: inline-block;
+        margin-top: 50px;
+    }
+
+    .footer-block{
+        margin-right: 100px;
+    }
+
+    .footer-text{
+        padding-left: 15px;
+    }
+
+    .footer-iconcash{
+        padding-left: 15px;
+    }
+
+    .footer__button-up{
+        right: 15px;
+    }
+}
+
+@media screen and (max-width: 1065px) {
+    .footer-connected {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 720px){
+    .footer-block{
+        margin-right: 20px;
+    }
+
+    .footer-navs {
+        display: none;
+    }
+
+    .footer-headers{
+        display: none;
+    }
+
+    .footer__nav-button{
+        display: inline-block;
+        padding: 5px 0;
+        width: 160px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .footer__nav-button_box:checked ~ .footer__mob-navs{
+        display: inline-block;
+    }
+
+    .footer__mob-navs{
+        position: absolute;
+        background-color: #363636;
+        width: 160px;
+        z-index: 1;
+        text-align: center;
+    }
+
+    .footer__mob-navs li a{
+        display: inline-block;
+        font-size: 1.2em;
+        color: #e8e8e8;
+        padding: 10px 0;
+    }
+
+    .footer__mob-navs li{
+        border-bottom: 2px solid #e8e8e8;
+    }
+
+    .footer-connected__header{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 530px){
+    .footer__nav-button{
+        margin-top: 20px;
+    }
+    .footer-connected{
+        margin-right: 0;
+    }
+
+    .footer-connected__social-button a{
+        margin-right: 5px;
+    }
+
+    .footer__nav-button:nth-child(3){
+        margin-left: -20px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .footer__form-search{
+        max-width: 320px;
+    }
+}

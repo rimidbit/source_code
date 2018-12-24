@@ -1,0 +1,108 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: "Roboto", Arial, sans-serif, "lato", "Krinkes Decor PERSONAL USE", "Playfair Display";
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    min-height: 100%;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+    font-size: 12px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.site-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+.pseudo-full-width-background::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    background-color: inherit;
+    top: 0;
+    left: -50vw;
+    right: -50vw;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: -1;
+}
+
+.container {
+    position: relative;
+    max-width: 1270px;
+    min-width: 320px;
+    margin: auto;
+    padding: 0 calc(1vw + .2rem);
+}
+
+.fade-in {
+    animation-name: fadeIn;
+    animation-duration: 1.3s;
+    animation-timing-function: cubic-bezier(0, 0, 0.4, 1);
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+h1 {
+    color: var(--color-primary);
+}
+
+a {
+    text-decoration: none;
+}
+
+.headers-h2 {
+    font-size: 2.4em;
+    text-align: center;
+    font-family: 'Playfair Display';
+    margin-bottom: 80px;
+}
+
+.headers-h2::before{
+    content: url('../img/header-decor.png');
+    margin-right: 80px;
+}
+
+.headers-h2::after{
+    content: url('../img/header-decor.png');
+    margin-left: 80px;
+}

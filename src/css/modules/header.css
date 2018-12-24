@@ -1,0 +1,146 @@
+.header__top-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Lato;
+    background-color: #f2f2f2;
+    position: relative;
+    min-height: 40px;
+}
+
+.header__top-line:after{
+    content: "";
+    height: 100%;
+    width: 100vw;
+    display: block;
+    background-color: inherit;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    margin: auto;
+    left: -50vw;
+    right: -50vw;
+}
+
+.header__top-line__icon{
+    font-size: 0.8em;
+    width: 1em;
+    height: 1em;
+    margin-right: 15px;
+}
+
+.header__top-line__nav{
+    color: #5d5d5d;
+}
+
+.header__top-line__nav a{
+    padding: 0 20px;
+    border-right: 1px solid #5d5d5d;
+}
+
+.header__top-line__nav a:nth-child(4){
+    border-right: none;
+}
+
+.header__general{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 120px;
+}
+
+.header__general__nav{
+    font-family: "Playfair Display";
+    font-weight: bold;
+    font-size: 1.4em;
+    margin: 0 5px;
+}
+/*
+.header__top-line__mob-btn{
+    display: none;
+}*/
+
+.header__top-line__mob-btn{
+    font-size: 2em;
+    width: 1em;
+    height: 1em;
+    display: none;
+}
+
+.header__general__nav a{
+    padding-right: 20px;
+    color: #000;
+}
+
+.header__general__logo h1{
+    font-family: Krinkes Decor PERSONAL USE;
+    font-size: 5.5em;
+    color: #000;
+    font-weight: bold;
+}
+
+.header__general__social{
+    display: flex;
+}
+
+.header__general__social-button img{
+    margin-right: 5px;
+}
+
+.header__general__button a{
+    margin-left: 40px;
+    display: block;
+    padding: 10px 15px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 1200px){
+    .header{
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .header__general{
+        flex-direction: column;
+    }
+
+    .header__general__logo{
+        order: 1;
+    }
+
+    .header__general__nav{
+        margin: 25px 0;
+    }
+}
+
+@media screen and (max-width: 620px){
+    .header__top-line__mob-btn{
+        display: block;
+    }
+
+    .header__top-line__nav{
+        display: none;
+    }
+
+    .header__general__mob-nav{
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 25px;
+        background-color: #f2f2f2;
+    }
+
+    .header__general__mob-nav a{
+        display: block;
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    .header__general__mob-nav.active{
+        right: 0;
+    }
+}
+
+/*header end*/

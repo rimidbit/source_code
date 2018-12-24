@@ -1,0 +1,16 @@
+.handpicked_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 460px 1fr;
+    grid-column-gap: 20px;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 20px;
+}
+/*
+.handpicked_center{
+    grid-column: span 2;
+}*/
+
+.handpicked_bottom{
+    grid-row-start: 2;
+    grid-row-end: 3;
+}

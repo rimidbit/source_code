@@ -1,0 +1,80 @@
+{
+  "name": "gulp.loc",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "@babel/plugin-transform-modules-commonjs"
+    ]
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "jquery": "latest",
+    "photoswipe": "^4.1.2",
+    "validate": "https://github.com/cferdinandi/validate.git",
+    "slick-carousel": "^1.8.1"
+  },
+  "overrides": {
+    "jquery": {
+      "main": "dist/jquery.min.js"
+    },
+    "photoswipe": {
+      "main": [
+        "dist/photoswipe.min.js",
+        "dist/photoswipe.css",
+        "dist/photoswipe-ui-default.min.js",
+        "dist/default-skin/default-skin.css",
+        "dist/default-skin/default-skin.png",
+        "dist/default-skin/default-skin.svg",
+        "dist/default-skin/preloader.gif"
+      ]
+    },
+    "validate": {
+      "main": "./dist/validate.min.js"
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.5",
+    "@babel/plugin-transform-modules-commonjs": "^7.1.0",
+    "@babel/preset-env": "^7.1.5",
+    "@babel/register": "^7.0.0",
+    "autoprefixer": "^9.3.1",
+    "babel-loader": "^8.0.4",
+    "browser-sync": "^2.26.3",
+    "cross-env": "^5.2.0",
+    "css-mqpacker": "^7.0.0",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-cached": "^1.1.1",
+    "gulp-debug": "^4.0.0",
+    "gulp-file-include": "^2.0.1",
+    "gulp-flatten": "^0.4.0",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-main-npm-files": "^1.0.5",
+    "gulp-newer": "^1.4.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-remember": "^1.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-svg-symbols": "^3.2.0",
+    "gulp-svgmin": "^2.1.0",
+    "npmfiles": "^0.1.1",
+    "postcss-apply": "^0.11.0",
+    "postcss-csso": "^3.0.0",
+    "postcss-custom-properties": "^8.0.9",
+    "postcss-import": "^12.0.1",
+    "postcss-nested": "^4.1.0",
+    "postcss-nesting": "^7.0.0",
+    "webpack": "^4.25.1",
+    "webpack-stream": "^5.1.1"
+  },
+  "scripts": {
+    "production-build": "cross-env NODE_ENV=production gulp build"
+  }
+}
