@@ -2,6 +2,7 @@
     position: relative;
     text-transform: uppercase;
     font-family: Lato;
+    font-weight: bold;
 }
 
 .slid__text{
@@ -12,6 +13,8 @@
     border: 1px solid #f2f2f2;
     border-radius: 2px;
     position: absolute;
+    top: 10%;
+    left: 40%;
 }
 
 .slid__text-head{
@@ -27,8 +30,17 @@
 
 .slid__text-upto{
     color: #f2f2f2;
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin-top: 10px;
+}
+
+
+.slid__text-upto:before{
+    content: url('../img/decor_left.png');
+}
+
+.slid__text-upto:after{
+    content: url('../img/decor_right.png');
 }
 
 .slid__text-off{
