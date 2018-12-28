@@ -116,7 +116,19 @@ eval("var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPAC
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _module = __webpack_require__(/*! ./modules/module1 */ \"./src/js/modules/module1.js\");\n\nvar _jquery = _interopRequireDefault(__webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\"));\n\n__webpack_require__(/*! slick-carousel/slick/slick.min.js */ \"./node_modules/slick-carousel/slick/slick.min.js\");\n\n__webpack_require__(!(function webpackMissingModule() { var e = new Error(\"Cannot find module 'modules/head.js'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n/*Блок с импортами модулей*/\n//здесь подключается скрпт карусели из папки node_modules\nconsole.log((0, _module.sum)(1, 5));\nvar a = 12;\nvar b = 'Test';\ndocument.body.addEventListener('click', function (_ref) {\n  var target = _ref.target;\n  console.log(target);\n}); //Здесь мы используем функцию запуска карусели на обёртке всех слайдов, я её добавил в _carousel.html\n\n(0, _jquery.default)('.slid-wrapper').slick();\n\n//# sourceURL=webpack:///./src/js/main.js?");
+eval("\n\nvar _module = __webpack_require__(/*! ./modules/module1 */ \"./src/js/modules/module1.js\");\n\nvar _jquery = _interopRequireDefault(__webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\"));\n\n__webpack_require__(/*! slick-carousel/slick/slick.min.js */ \"./node_modules/slick-carousel/slick/slick.min.js\");\n\nvar _head = __webpack_require__(/*! ./modules/head.js */ \"./src/js/modules/head.js\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n/*Блок с импортами модулей*/\n//здесь подключается скрпт карусели из папки node_modules\nconsole.log((0, _module.sum)(1, 5));\nvar a = 12;\nvar b = 'Test';\ndocument.body.addEventListener('click', function (_ref) {\n  var target = _ref.target;\n  console.log(target);\n}); //Здесь мы используем функцию запуска карусели на обёртке всех слайдов, я её добавил в _carousel.html\n\n(0, _jquery.default)('.slid-wrapper').slick();\n\n//# sourceURL=webpack:///./src/js/main.js?");
+
+/***/ }),
+
+/***/ "./src/js/modules/head.js":
+/*!********************************!*\
+  !*** ./src/js/modules/head.js ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.openMenu = openMenu;\n\nfunction openMenu() {\n  document.getElementById(\"nav\").classList.toggle(\"active\");\n}\n\n//# sourceURL=webpack:///./src/js/modules/head.js?");
 
 /***/ }),
 

@@ -15,6 +15,13 @@
     position: absolute;
     top: 10%;
     left: 40%;
+    margin: 5px;
+}
+
+.slid__wrapper-text{
+    padding: 3px;
+    border: 2px solid #f2f2f2;
+    border-radius: 2px;
 }
 
 .slid__text-head{
